@@ -34,7 +34,7 @@ namespace MinotaurLabyrinthTest
             Assert.IsFalse(result); // DisplaySense should return false
         }
 
-       [TestMethod]
+        [TestMethod]
         public void Activate_HeroWithoutSword_HeroDefeatedAndMonsterWins()
         {
             // Arrange
