@@ -51,7 +51,7 @@ namespace MinotaurLabyrinthTest
             // Assert
             Assert.AreEqual(0, hero.Health); // Hero should be defeated
             Assert.IsTrue(nightmare.Health > 0); // Nightmare should have remaining health
-            Assert.IsTrue(hero.HasSword); // Hero should still not have the sword
+            Assert.IsFalse(hero.HasSword); // Hero should still not have the sword
         }
     }
 }
