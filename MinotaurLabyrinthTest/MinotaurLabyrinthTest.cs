@@ -44,10 +44,8 @@ namespace MinotaurLabyrinthTest
             var nightmare = new Nightmare();
             var hero = new Hero(new Location(0,0));
             hero.HasSword = false;
-
             // Act
             nightmare.Activate(hero, null);
-
             // Assert
             Assert.AreEqual(0, hero.Health); // Hero should be defeated
             Assert.IsTrue(nightmare.Health > 0); // Nightmare should have remaining health
