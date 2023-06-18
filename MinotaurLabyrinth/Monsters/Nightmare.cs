@@ -10,10 +10,10 @@
 
         public override void Activate(Hero hero, Map map)
         {
-            const int heroAttackDamageWithSword = 20;
-            const int heroAttackDamageWithoutSword = 10;
-            const int monsterRegularAttackDamage = 10;
-            const int monsterSpecialAttackDamage = 30;
+            const int HeroAttackDamageWithSword = 20;
+            const int HeroAttackDamageWithoutSword = 10;
+            const int MonsterRegularAttackDamage = 10;
+            const int MonsterSpecialAttackDamage = 30;
 
             bool heroHasSword = hero.HasSword;
             int turnCount = 1;
@@ -28,13 +28,13 @@
 
                 if (turnCount % 3 == 0)
                 {
-                    hero.Health -= monsterSpecialAttackDamage;
-                    Console.WriteLine($"Nightmare unleashes a powerful attack on the hero! The hero loses {monsterSpecialAttackDamage} health.");
+                    hero.Health -= MonsterSpecialAttackDamage;
+                    Console.WriteLine($"Nightmare unleashes a powerful attack on the hero! The hero loses {MonsterSpecialAttackDamage} health.");
                 }
                 else
                 {
-                    hero.Health -= monsterRegularAttackDamage;
-                    Console.WriteLine($"Nightmare attacks the hero! The hero loses {monsterRegularAttackDamage} health.");
+                    hero.Health -= MonsterRegularAttackDamage;
+                    Console.WriteLine($"Nightmare attacks the hero! The hero loses {MonsterRegularAttackDamage} health.");
                 }
 
                 if (hero.Health <= 0)
@@ -45,13 +45,13 @@
                 // Hero attacks the monster
                 if (heroHasSword)
                 {
-                    Health -= heroAttackDamageWithSword;
-                    Console.WriteLine($"The hero strikes Nightmare with a mighty blow! Nightmare loses {heroAttackDamageWithSword} health.");
+                    Health -= HeroAttackDamageWithSword;
+                    Console.WriteLine($"The hero strikes Nightmare with a mighty blow! Nightmare loses {HeroAttackDamageWithSword} health.");
                 }
                 else
                 {
-                    Health -= heroAttackDamageWithoutSword;
-                    Console.WriteLine($"The hero attacks Nightmare! Nightmare loses {heroAttackDamageWithoutSword} health.");
+                    Health -= HeroAttackDamageWithoutSword;
+                    Console.WriteLine($"The hero attacks Nightmare! Nightmare loses {HeroAttackDamageWithoutSword} health.");
                 }
 
                 if (Health <= 0)
