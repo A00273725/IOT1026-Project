@@ -24,13 +24,16 @@ namespace MinotaurLabyrinthTest
         {
             // Arrange
             var nightmare = new Nightmare();
-            var hero = new Hero(new Location(0,0));
+            var hero = new Hero(new Location(0, 0));
             int heroDistance = 2;
+
             // Act
             bool result = nightmare.DisplaySense(hero, heroDistance);
+
             // Assert
             Assert.IsFalse(result); // DisplaySense should return false
         }
+
         [TestMethod]
          public void Activate_HeroWithoutSword_HeroDefeatedAndMonsterWins()
         {
