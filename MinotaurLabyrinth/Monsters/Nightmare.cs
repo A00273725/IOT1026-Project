@@ -5,7 +5,7 @@
     /// </summary>
     public class Nightmare : Monster
     {
-        private int Health { get; set; } = 100;
+        public int Health { get; set; } = 100;
 
 
         public override void Activate(Hero hero, Map map)

@@ -10,7 +10,7 @@ namespace MinotaurLabyrinthTest
         {
             // Arrange
             var nightmare = new Nightmare();
-            var hero = new Hero();
+            var hero = new Hero(new Location(0, 0));
             hero.HasSword = true;
 
             // Act
