@@ -1,4 +1,4 @@
-namespace MinotaurLabyrinth
+﻿namespace MinotaurLabyrinth
 {
     /// <summary>
     /// Represents a custom monster in the game.

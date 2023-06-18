@@ -3,7 +3,7 @@
     // Represents the player in the game.
     public class Hero
     {
-           // The player's health attribute.
+        // The player's health attribute.
         public int Health { get; set; } = 100;
         // Creates a new player that starts at the given location.
         public Hero(Location start) => Location = start;

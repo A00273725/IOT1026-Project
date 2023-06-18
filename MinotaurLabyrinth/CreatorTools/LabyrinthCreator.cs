@@ -119,8 +119,7 @@
             Location minotaurLocation = ProceduralGenerator.GetRandomLocation();
             Room room = map.GetRoomAtLocation(minotaurLocation);
             room.AddMonster(new Minotaur());
-
-            
+            //added the monster Nightmare
             Location nightmareLocation = ProceduralGenerator.GetRandomLocation();
             Room nightmareRoom = map.GetRoomAtLocation(nightmareLocation);
             nightmareRoom.AddMonster(new Nightmare());
