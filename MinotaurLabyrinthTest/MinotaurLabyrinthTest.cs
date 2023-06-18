@@ -8,7 +8,7 @@ namespace MinotaurLabyrinthTest
         [TestMethod]
         public void Activate_HeroWithSword_MonsterDefeatedAndHeroWins()
         {
-          // Arrange
+            // Arrange
             var nightmare = new Nightmare();
             var hero = new Hero();
             hero.HasSword = true;
