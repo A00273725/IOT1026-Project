@@ -1,3 +1,6 @@
+using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace MinotaurLabyrinthTest
 {
     [TestFixture]
